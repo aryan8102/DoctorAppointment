@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/constant/drawer.dart';
+import 'package:myapp/upload_description.dart';
 import 'package:myapp/utils.dart';
 
 class SearchMedicalShop extends StatelessWidget {
@@ -231,7 +233,14 @@ class SearchMedicalShop extends StatelessWidget {
                         ),
                         Material(
                           child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                 Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      MyDrawer()),
+                                            );
+                              },
                               icon: const Icon(
                                 Icons.arrow_drop_down,
                               )),
@@ -390,7 +399,13 @@ class SearchMedicalShop extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                  
+                  Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        const UploadPrescriptionPage()),
+                                                          );
                     },
                     borderRadius: BorderRadius.circular(30),
                     child: Padding(
@@ -414,7 +429,13 @@ class SearchMedicalShop extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                 
+                   Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        const UploadPrescriptionPage()),
+                                                          );
                 
                     },
                     borderRadius: BorderRadius.circular(30),
@@ -537,7 +558,13 @@ class SearchMedicalShop extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                  
+                    Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        const UploadPrescriptionPage()),
+                                                          );
                     },
                     borderRadius: BorderRadius.circular(30),
                     child: Padding(
@@ -561,7 +588,13 @@ class SearchMedicalShop extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                 
+                   Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        const UploadPrescriptionPage()),
+                                                          );
                 
                     },
                     borderRadius: BorderRadius.circular(30),

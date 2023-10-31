@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'package:myapp/utils.dart';
+
+import 'doctor_profile_page.dart';
 
 class DetailPage extends StatefulWidget {
   const DetailPage({super.key});
@@ -249,70 +250,79 @@ class _DetailPageState extends State<DetailPage> {
                     ],
                   ),
                 ),
-                InkWell(
-                  onTap: (){},
-                  child: Container(
-                    // group49whr (59:2)
-                    padding: EdgeInsets.fromLTRB(
-                        47 * fem, 41 * fem, 73 * fem, 41 * fem),
-                    height: double.infinity,
-                    decoration: BoxDecoration(
-                      color: Color(0xff1f5e82),
-                      borderRadius: BorderRadius.circular(11 * fem),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          // autogroupmgnc53N (3tVbrewujWvwMHsCfZmGnC)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 43 * fem, 0 * fem),
-                          height: double.infinity,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
+                Material(
+                  child: InkWell(
+                    onTap: (){
+                       Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const DoctorProfilePage()),
+                                          );
+                    },
+                    child: Container(
+                      // group49whr (59:2)
+                      padding: EdgeInsets.fromLTRB(
+                          47 * fem, 41 * fem, 73 * fem, 41 * fem),
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Color(0xff1f5e82),
+                        borderRadius: BorderRadius.circular(11 * fem),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            // autogroupmgnc53N (3tVbrewujWvwMHsCfZmGnC)
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 43 * fem, 0 * fem),
+                            height: double.infinity,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  
+                                  margin: EdgeInsets.fromLTRB(
+                                      0 * fem, 0 * fem, 0 * fem, 17 * fem),
+                                  child: Text(
+                                    'Book Appointment',
+                                    style: SafeGoogleFont(
+                                      'Inter',
+                                      fontSize: 26 * ffem,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1.2125 * ffem / fem,
+                                      color: Color(0xffffffff),
+                                    ),
+                                  ),
+                                ),
+                                Text(
                                 
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 17 * fem),
-                                child: Text(
-                                  'Book Appointment',
+                                  'No Booking Fee',
                                   style: SafeGoogleFont(
                                     'Inter',
-                                    fontSize: 26 * ffem,
-                                    fontWeight: FontWeight.w700,
+                                    fontSize: 24 * ffem,
+                                    fontWeight: FontWeight.w400,
                                     height: 1.2125 * ffem / fem,
                                     color: Color(0xffffffff),
                                   ),
                                 ),
-                              ),
-                              Text(
-                              
-                                'No Booking Fee',
-                                style: SafeGoogleFont(
-                                  'Inter',
-                                  fontSize: 24 * ffem,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.2125 * ffem / fem,
-                                  color: Color(0xffffffff),
-                                ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        Container(
-                          // vectorrCY (50:37)
-                          margin: EdgeInsets.fromLTRB(
-                              0 * fem, 0 * fem, 0 * fem, 1 * fem),
-                          width: 47 * fem,
-                          height: 78 * fem,
-                          child: Image.network(
-                            'assets/page-1/images/4.png',
+                          Container(
+                            // vectorrCY (50:37)
+                            margin: EdgeInsets.fromLTRB(
+                                0 * fem, 0 * fem, 0 * fem, 1 * fem),
                             width: 47 * fem,
                             height: 78 * fem,
+                            child: Image.network(
+                              'assets/page-1/images/4.png',
+                              width: 47 * fem,
+                              height: 78 * fem,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),

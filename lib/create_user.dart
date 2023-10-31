@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/registration_page.dart';
-import 'package:myapp/updated_registration_page.dart';
 import 'package:myapp/utils.dart';
 
 void main() {
@@ -11,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Your App',
       home: MakeUser(),
     );
@@ -44,7 +43,7 @@ class MakeUser extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -55,17 +54,17 @@ class MakeUser extends StatelessWidget {
                         fontSize: 45 * ffem,
                         fontWeight: FontWeight.w700,
                         height: 1.1975 * ffem / fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
-                padding: EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -76,10 +75,10 @@ class MakeUser extends StatelessWidget {
                         fontSize: 29 * ffem,
                         fontWeight: FontWeight.w700,
                         height: 1.1975 * ffem / fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 470,
                     ),
                     Text(
@@ -89,13 +88,13 @@ class MakeUser extends StatelessWidget {
                         fontSize: 29 * ffem,
                         fontWeight: FontWeight.w700,
                         height: 1.1975 * ffem / fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
@@ -136,7 +135,7 @@ class MakeUser extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 140,
                     ),
                     Container(
@@ -175,11 +174,11 @@ class MakeUser extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
-                padding: EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -190,10 +189,10 @@ class MakeUser extends StatelessWidget {
                         fontSize: 29 * ffem,
                         fontWeight: FontWeight.w700,
                         height: 1.1975 * ffem / fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 470,
                     ),
                     Text(
@@ -203,13 +202,13 @@ class MakeUser extends StatelessWidget {
                         fontSize: 29 * ffem,
                         fontWeight: FontWeight.w700,
                         height: 1.1975 * ffem / fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
@@ -250,7 +249,7 @@ class MakeUser extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 140,
                     ),
                     Container(
@@ -289,7 +288,7 @@ class MakeUser extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.only(left: 470),
                 child: Material(
@@ -297,11 +296,11 @@ class MakeUser extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                      Get.to(UpdatedRegistrationPage());
+                      Get.to(const RegistrationPage());
                       // Handle button tap
                     },
                     borderRadius: BorderRadius.circular(30),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 14,
                         horizontal: 28,
@@ -318,7 +317,7 @@ class MakeUser extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.only(left: 330),
                 child: Container(
@@ -355,7 +354,7 @@ class MakeUser extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Padding(
@@ -365,11 +364,11 @@ class MakeUser extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   child: InkWell(
                     onTap: () {
-                      Get.to(UpdatedRegistrationPage());
+                      Get.to(const RegistrationPage());
                       // Handle button tap
                     },
                     borderRadius: BorderRadius.circular(30),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 18,
                         horizontal: 36,
@@ -386,7 +385,7 @@ class MakeUser extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               Padding(
                 padding: const EdgeInsets.only(left: 255),
                 child: SizedBox(
@@ -395,7 +394,7 @@ class MakeUser extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(57 * fem),
-                      color: Color(0xff005473),
+                      color: const Color(0xff005473),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -407,7 +406,7 @@ class MakeUser extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(57 * fem),
-                              color: Color(0xff01364a),
+                              color: const Color(0xff01364a),
                             ),
                             child: Icon(
                               Icons.search_sharp,
@@ -415,7 +414,7 @@ class MakeUser extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 30,
                         ),
                         SizedBox(
@@ -430,7 +429,7 @@ class MakeUser extends StatelessWidget {
                                 fontSize: 22 * ffem,
                                 fontWeight: FontWeight.w500,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xffffffff),
+                                color: const Color(0xffffffff),
                               ),
                             ),
                           ),
@@ -440,7 +439,7 @@ class MakeUser extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
@@ -451,7 +450,7 @@ class MakeUser extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(57 * fem),
-                      color: Color(0xff005473),
+                      color: const Color(0xff005473),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -463,7 +462,7 @@ class MakeUser extends StatelessWidget {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(57 * fem),
-                              color: Color(0xff01364a),
+                              color: const Color(0xff01364a),
                             ),
                             child: Icon(
                               Icons.facebook_sharp,
@@ -471,7 +470,7 @@ class MakeUser extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 30,
                         ),
                         SizedBox(
@@ -486,7 +485,7 @@ class MakeUser extends StatelessWidget {
                                 fontSize: 22 * ffem,
                                 fontWeight: FontWeight.w500,
                                 height: 1.2125 * ffem / fem,
-                                color: Color(0xffffffff),
+                                color: const Color(0xffffffff),
                               ),
                             ),
                           ),

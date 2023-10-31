@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/doctor/doctor_registration_page.dart';
+import 'package:myapp/doctor_detail_page.dart';
+import 'package:myapp/doctor_profile_page.dart';
 import 'package:myapp/profile_page.dart';
 import 'package:myapp/utils.dart';
 
@@ -9,9 +12,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Your App',
-      home: DoctorFindPage(),
+      home: DoctorRegistrationPage(),
     );
   }
 }
@@ -38,239 +41,6 @@ class DoctorFindPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 20),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    children: [
-                      Image.asset(
-                        'assets/page-1/images/group-2405-Ehn.png',
-                        width: 70 * fem,
-                        height: 80 * fem,
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Doc ',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 32 * ffem,
-                          fontWeight: FontWeight.w800,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff005473),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Search',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 32 * ffem,
-                          fontWeight: FontWeight.w500,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xfffbbc05),
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      TextButton(
-                        onPressed: () {
-
-                        },
-                        child: Text(
-                          'Find doctors',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 27 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff005473),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Book an appointment',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff5e5c5c),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      TextButton(
-                        onPressed: () {
-
-                        },
-                        child: Text(
-                          'Video consult',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 27 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff005473),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        // consultdoctorssaB (72:20)
-                        'Consult doctors',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff5e5c5c),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'Medicines',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 27 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff005473),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Doc search \npharmacy',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff5e5c5c),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      TextButton(
-                        onPressed: () {
-                          
-                        },
-                        child: Text(
-                          'Labs  test ',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 27 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff005473),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        'Health\ncheck-ups',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff5e5c5c),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'Hospital',
-                          style: SafeGoogleFont(
-                            'Inter',
-                            fontSize: 27 * ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2125 * ffem / fem,
-                            color: Color(0xff005473),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Text(
-                        // findhostipalstvX (72:23)
-                        'Find hostipals',
-                        style: SafeGoogleFont(
-                          'Inter',
-                          fontSize: 20 * ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2125 * ffem / fem,
-                          color: Color(0xff5e5c5c),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Material(
-                    child: IconButton(
-                        onPressed: () {
-                            Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const ProfilePage()),
-                                        );
-                        },
-                        icon: Icon(
-                          Icons.person_2,
-                          size: 50,
-                        )),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                border: Border(
-                  bottom: BorderSide(
-                    color: Colors.black45, // Customize the line color
-                    width: 2, // Customize the line thickness
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Padding(
               padding: const EdgeInsets.only(left: 400),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -289,8 +59,12 @@ class DoctorFindPage extends StatelessWidget {
                   const SizedBox(height: 50),
                   // Text field for entering phone number
                   Container(
-                    width: 500 * fem,
+                    width: 650 * fem, // Adjust the width as needed
                     child: Material(
+                      elevation: 3, // Add elevation for a card-like appearance
+                      shadowColor: Colors.grey,
+                      borderRadius:
+                          BorderRadius.circular(10), // Add rounded corners
                       child: TextField(
                         controller: locationController,
                         keyboardType: TextInputType.phone,
@@ -305,14 +79,19 @@ class DoctorFindPage extends StatelessWidget {
                                 ? const Color(0xff42869E)
                                 : Colors.transparent,
                           ),
-                          focusedBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Color(0xff42869E)),
+                            borderRadius: BorderRadius.circular(
+                                10), // Match the border radius
                           ),
-                          enabledBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Color(0xff42869E)),
+                            borderRadius: BorderRadius.circular(
+                                10), // Match the border radius
                           ),
                           prefixIcon: const Icon(
-                            Icons.person,
+                            Icons
+                                .location_on, // You can change the icon as needed
                             color: Color(0xff42869E),
                           ),
                           filled: true,
@@ -321,11 +100,16 @@ class DoctorFindPage extends StatelessWidget {
                       ),
                     ),
                   ),
+
                   const SizedBox(height: 30),
                   // Text field for entering phone number
                   Container(
-                    width: 500 * fem,
+                    width: 650 * fem, // Adjust the width as needed
                     child: Material(
+                      elevation: 3, // Add elevation for a card-like appearance
+                      shadowColor: Colors.grey,
+                      borderRadius:
+                          BorderRadius.circular(10), // Add rounded corners
                       child: TextField(
                         controller: specialController,
                         keyboardType: TextInputType.phone,
@@ -334,20 +118,25 @@ class DoctorFindPage extends StatelessWidget {
                           color: const Color(0xff000000),
                         ),
                         decoration: InputDecoration(
-                          labelText: 'Enter Specialities of doctor',
+                          labelText: 'Enter the Speciality',
                           labelStyle: TextStyle(
                             color: specialController.text.isEmpty
                                 ? const Color(0xff42869E)
                                 : Colors.transparent,
                           ),
-                          focusedBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Color(0xff42869E)),
+                            borderRadius: BorderRadius.circular(
+                                10), // Match the border radius
                           ),
-                          enabledBorder: const OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide: const BorderSide(color: Color(0xff42869E)),
+                            borderRadius: BorderRadius.circular(
+                                10), // Match the border radius
                           ),
                           prefixIcon: const Icon(
-                            Icons.person,
+                            Icons
+                                .medical_information, // You can change the icon as needed
                             color: Color(0xff42869E),
                           ),
                           filled: true,
@@ -359,7 +148,7 @@ class DoctorFindPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Padding(
@@ -404,18 +193,18 @@ class DoctorFindPage extends StatelessWidget {
                         width: double.infinity,
                         height: 201.6 * fem,
                         decoration: BoxDecoration(
-                          border: Border.all(color: Color(0xffecfafc)),
-                          color: Color(0xffecfafc),
+                          border: Border.all(color: const Color(0xffecfafc)),
+                          color: const Color(0xffecfafc),
                           borderRadius:
                               BorderRadius.circular(30.5999984741 * fem),
                           boxShadow: [
                             BoxShadow(
-                              color: Color(0x3f000000),
+                              color: const Color(0x3f000000),
                               offset: Offset(0 * fem, 3.5999999046 * fem),
                               blurRadius: 1.7999999523 * fem,
                             ),
                             BoxShadow(
-                              color: Color(0x3f000000),
+                              color: const Color(0x3f000000),
                               offset: Offset(0 * fem, -3 * fem),
                               blurRadius: 2 * fem,
                             ),
@@ -458,14 +247,14 @@ class DoctorFindPage extends StatelessWidget {
                                             height: double.infinity,
                                             decoration: BoxDecoration(
                                               border: Border.all(
-                                                  color: Color(0xff498f9d)),
-                                              color: Color(0xffffffff),
+                                                  color: const Color(0xff498f9d)),
+                                              color: const Color(0xffffffff),
                                               borderRadius:
                                                   BorderRadius.circular(
                                                       81 * fem),
                                               boxShadow: [
                                                 BoxShadow(
-                                                  color: Color(0xffdceff6),
+                                                  color: const Color(0xffdceff6),
                                                   offset: Offset(0 * fem,
                                                       5.3999996185 * fem),
                                                   blurRadius:
@@ -490,7 +279,7 @@ class DoctorFindPage extends StatelessWidget {
                                                           FontWeight.w600,
                                                       height:
                                                           1.2125 * ffem / fem,
-                                                      color: Color(0xff005473),
+                                                      color: const Color(0xff005473),
                                                     ),
                                                   ),
                                                 ),
@@ -523,14 +312,14 @@ class DoctorFindPage extends StatelessWidget {
                                             height: double.infinity,
                                             decoration: BoxDecoration(
                                               border: Border.all(
-                                                  color: Color(0xff498f9d)),
-                                              color: Color(0xffffffff),
+                                                  color: const Color(0xff498f9d)),
+                                              color: const Color(0xffffffff),
                                               borderRadius:
                                                   BorderRadius.circular(
                                                       81 * fem),
                                               boxShadow: [
                                                 BoxShadow(
-                                                  color: Color(0xffdceff6),
+                                                  color: const Color(0xffdceff6),
                                                   offset: Offset(0 * fem,
                                                       5.3999996185 * fem),
                                                   blurRadius:
@@ -555,7 +344,7 @@ class DoctorFindPage extends StatelessWidget {
                                                           FontWeight.w600,
                                                       height:
                                                           1.2125 * ffem / fem,
-                                                      color: Color(0xff005473),
+                                                      color: const Color(0xff005473),
                                                     ),
                                                   ),
                                                 ),
@@ -588,13 +377,13 @@ class DoctorFindPage extends StatelessWidget {
                                       height: double.infinity,
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                            color: Color(0xff498f9d)),
-                                        color: Color(0xffffffff),
+                                            color: const Color(0xff498f9d)),
+                                        color: const Color(0xffffffff),
                                         borderRadius:
                                             BorderRadius.circular(81 * fem),
                                         boxShadow: [
                                           BoxShadow(
-                                            color: Color(0xffdceff6),
+                                            color: const Color(0xffdceff6),
                                             offset: Offset(
                                                 0 * fem, 5.3999996185 * fem),
                                             blurRadius: 1.7999999523 * fem,
@@ -615,7 +404,7 @@ class DoctorFindPage extends StatelessWidget {
                                                 fontSize: 21.5999984741 * ffem,
                                                 fontWeight: FontWeight.w600,
                                                 height: 1.2125 * ffem / fem,
-                                                color: Color(0xff005473),
+                                                color: const Color(0xff005473),
                                               ),
                                             ),
                                           ),
@@ -630,7 +419,14 @@ class DoctorFindPage extends StatelessWidget {
                                 margin: EdgeInsets.fromLTRB(
                                     0 * fem, 0 * fem, 34.7 * fem, 1.4 * fem),
                                 child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const DetailPage()),
+                                    );
+                                  },
                                   child: Text(
                                     'GET STARTED',
                                     style: SafeGoogleFont(
@@ -638,7 +434,7 @@ class DoctorFindPage extends StatelessWidget {
                                       fontSize: 25.1999988556 * ffem,
                                       fontWeight: FontWeight.w800,
                                       height: 1.2125 * ffem / fem,
-                                      color: Color(0xff005473),
+                                      color: const Color(0xff005473),
                                     ),
                                   ),
                                 ),
@@ -652,239 +448,241 @@ class DoctorFindPage extends StatelessWidget {
                 ),
               ),
             ),
-         Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 20),
-  child: Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: [
-      SizedBox(height: 20),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            'Find a doctor nearby in just 3 steps',
-            style: TextStyle(
-              fontFamily: 'Inter',
-              fontSize: 40 * ffem,
-              fontWeight: FontWeight.w600,
-              color: Colors.blueAccent,
-            ),
-          ),
-          Container(
-            width: 128 * fem,
-            height: 128 * fem,
-            child: Image.network(
-              "assets/page-1/images/image-36.png", 
-              fit: BoxFit.cover,
-            ),
-          ),
-        ],
-      ),
-      SizedBox(height: 20),
-      Text(
-        'Your area/pincode',
-        style: TextStyle(
-          fontFamily: 'Inter',
-          fontSize: 32 * ffem,
-          fontWeight: FontWeight.w600,
-          color: Colors.blueAccent,
-        ),
-      ),
-      SizedBox(height: 20),
-      Container(
-        width: 500 * fem,
-        child: Material(
-          child: TextField(
-            controller: locationController,
-            keyboardType: TextInputType.phone,
-            style: TextStyle(
-              fontSize: 20 * ffem,
-              color: const Color(0xff000000),
-            ),
-            decoration: InputDecoration(
-              labelText: 'Enter Your Location',
-              labelStyle: TextStyle(
-                color: specialController.text.isEmpty
-                    ? const Color(0xff42869E)
-                    : Colors.transparent,
-              ),
-              focusedBorder: const OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xff42869E)),
-              ),
-              enabledBorder: const OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xff42869E)),
-              ),
-              prefixIcon: const Icon(
-                Icons.person,
-                color: Color(0xff42869E),
-              ),
-              filled: true,
-              fillColor: Colors.white,
-            ),
-          ),
-        ),
-      ),
-      SizedBox(height: 30),
-      Text(
-        'Search specialities',
-        style: TextStyle(
-          fontFamily: 'Inter',
-          fontSize: 32 * ffem,
-          fontWeight: FontWeight.w600,
-          color: Colors.blueAccent,
-        ),
-      ),
-      SizedBox(height: 20),
-      Container(
-        width: 500 * fem,
-        child: Material(
-          child: TextField(
-            controller: specialController,
-            keyboardType: TextInputType.phone,
-            style: TextStyle(
-              fontSize: 20 * ffem,
-              color: const Color(0xff000000),
-            ),
-            decoration: InputDecoration(
-              labelText: 'Enter Specialities of doctor',
-              labelStyle: TextStyle(
-                color: specialController.text.isEmpty
-                    ? const Color(0xff42869E)
-                    : Colors.transparent,
-              ),
-              focusedBorder: const OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xff42869E)),
-              ),
-              enabledBorder: const OutlineInputBorder(
-                borderSide: BorderSide(color: Color(0xff42869E)),
-              ),
-              prefixIcon: const Icon(
-                Icons.person,
-                color: Color(0xff42869E),
-              ),
-              filled: true,
-              fillColor: Colors.white,
-            ),
-          ),
-        ),
-      ),
-      SizedBox(height: 30),
-      Text(
-        'Time to meet',
-        style: TextStyle(
-          fontFamily: 'Inter',
-          fontSize: 32 * ffem,
-          fontWeight: FontWeight.w600,
-          color: Colors.blueAccent,
-        ),
-      ),
-      SizedBox(height: 20),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Material(
-            color: Colors.redAccent,
-            borderRadius: BorderRadius.circular(30),
-            child: InkWell(
-              onTap: () {
-                // Handle button tap
-              },
-              borderRadius: BorderRadius.circular(30),
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 14,
-                  horizontal: 28,
-                ),
-                child: Text(
-                  "Morning",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Find a doctor nearby in just 3 steps',
+                        style: TextStyle(
+                          fontFamily: 'Inter',
+                          fontSize: 40 * ffem,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.blueAccent,
+                        ),
+                      ),
+                      Container(
+                        width: 128 * fem,
+                        height: 128 * fem,
+                        child: Image.network(
+                          "assets/page-1/images/image-36.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-              ),
-            ),
-          ),
-          Material(
-            color: Colors.redAccent,
-            borderRadius: BorderRadius.circular(30),
-            child: InkWell(
-              onTap: () {
-                // Handle button tap
-              },
-              borderRadius: BorderRadius.circular(30),
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 14,
-                  horizontal: 28,
-                ),
-                child: Text(
-                  "Afternoon",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
+                  const SizedBox(height: 20),
+                  Text(
+                    'Your area/pincode',
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 32 * ffem,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.blueAccent,
+                    ),
                   ),
-                ),
-              ),
-            ),
-          ),
-          Material(
-            color: Colors.redAccent,
-            borderRadius: BorderRadius.circular(30),
-            child: InkWell(
-              onTap: () {
-                // Handle button tap
-              },
-              borderRadius: BorderRadius.circular(30),
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 14,
-                  horizontal: 28,
-                ),
-                child: Text(
-                  "Evening",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
+                  const SizedBox(height: 20),
+                  Container(
+                    width: 500 * fem,
+                    child: Material(
+                      child: TextField(
+                        controller: locationController,
+                        keyboardType: TextInputType.phone,
+                        style: TextStyle(
+                          fontSize: 20 * ffem,
+                          color: const Color(0xff000000),
+                        ),
+                        decoration: InputDecoration(
+                          labelText: 'Enter Your Location',
+                          labelStyle: TextStyle(
+                            color: specialController.text.isEmpty
+                                ? const Color(0xff42869E)
+                                : Colors.transparent,
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          ),
+                          enabledBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          ),
+                          prefixIcon: const Icon(
+                            Icons.person,
+                            color: Color(0xff42869E),
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
-          ),
-          Material(
-            color: Colors.black87,
-            borderRadius: BorderRadius.circular(30),
-            child: InkWell(
-              onTap: () {
-                // Handle button tap
-              },
-              borderRadius: BorderRadius.circular(30),
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 14,
-                  horizontal: 28,
-                ),
-                child: Text(
-                  "Submit",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                  const SizedBox(height: 30),
+                  Text(
+                    'Search specialities',
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 32 * ffem,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.blueAccent,
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 20),
+                  Container(
+                    width: 500 * fem,
+                    child: Material(
+                      child: TextField(
+                        controller: specialController,
+                        keyboardType: TextInputType.phone,
+                        style: TextStyle(
+                          fontSize: 20 * ffem,
+                          color: const Color(0xff000000),
+                        ),
+                        decoration: InputDecoration(
+                          labelText: 'Enter Specialities of doctor',
+                          labelStyle: TextStyle(
+                            color: specialController.text.isEmpty
+                                ? const Color(0xff42869E)
+                                : Colors.transparent,
+                          ),
+                          focusedBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          ),
+                          enabledBorder: const OutlineInputBorder(
+                            borderSide: BorderSide(color: Color(0xff42869E)),
+                          ),
+                          prefixIcon: const Icon(
+                            Icons.person,
+                            color: Color(0xff42869E),
+                          ),
+                          filled: true,
+                          fillColor: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 30),
+                  Text(
+                    'Time to meet',
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 32 * ffem,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.blueAccent,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Material(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(30),
+                        child: InkWell(
+                          onTap: () {
+                            // Handle button tap
+                          },
+                          borderRadius: BorderRadius.circular(30),
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 14,
+                              horizontal: 28,
+                            ),
+                            child: Text(
+                              "Morning",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Material(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(30),
+                        child: InkWell(
+                          onTap: () {
+                            // Handle button tap
+                          },
+                          borderRadius: BorderRadius.circular(30),
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 14,
+                              horizontal: 28,
+                            ),
+                            child: Text(
+                              "Afternoon",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Material(
+                        color: Colors.redAccent,
+                        borderRadius: BorderRadius.circular(30),
+                        child: InkWell(
+                          onTap: () {
+                            // Handle button tap
+                          },
+                          borderRadius: BorderRadius.circular(30),
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 14,
+                              horizontal: 28,
+                            ),
+                            child: Text(
+                              "Evening",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Material(
+                        color: Colors.black87,
+                        borderRadius: BorderRadius.circular(30),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const DetailPage()),
+                            );
+                          },
+                          borderRadius: BorderRadius.circular(30),
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 14,
+                              horizontal: 28,
+                            ),
+                            child: Text(
+                              "Submit",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-          ),
-        ],
-      ),
-    ],
-  ),
-),
-
-
           ],
         ),
       ),
