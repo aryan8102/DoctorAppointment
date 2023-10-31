@@ -1,0 +1,21 @@
+import 'package:get/get.dart';
+import 'package:myapp/consultdoctor/consult_now.dart';
+import 'package:myapp/find_chemist.dart';
+import 'package:myapp/lab/find_lab.dart';
+import 'package:myapp/medical_shop_page.dart';
+import 'package:myapp/new_page.dart';
+import 'package:myapp/profile_page.dart';
+import 'package:myapp/search_doctor.dart';
+
+class SideBarController extends GetxController {
+  RxInt index = 0.obs;
+
+  var pages = [
+    HomePage(),
+     ConsultNowPage(),
+    SearchChemist(),
+    SearchLab(),
+    DoctorFindPage(),
+    ProfilePage(),
+  ];
+}
